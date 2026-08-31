@@ -51,11 +51,6 @@ public class FBTCalibratorFollowHead : ResoniteMod {
 				vrIK.Slot.LocalRotation = floatQ.LookRotation(headDir,new float3(0f,1f,0f));
 
 			}
-			else if (__instance.CalibratingPose == false) {
-
-				
-
-			}
 		}
 	}
 }
