@@ -42,7 +42,7 @@ public class FBTCalibratorFollowHead : ResoniteMod {
 
 				Slot head = __instance.Slot.FindChildInHierarchy("Visual - Head");
 
-				var headDir = head.Parent.GlobalDirectionToLocal(head.Forward).x_z.Normalized;
+				float3 headDir = head.Parent.GlobalDirectionToLocal(head.Forward).x_z.Normalized;
 
 
 
