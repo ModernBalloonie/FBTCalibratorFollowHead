@@ -11,14 +11,14 @@ using ResoniteModLoader;
 namespace FBTCalibratorFollowHead;
 //More info on creating mods can be found https://github.com/resonite-modding-group/ResoniteModLoader/wiki/Creating-Mods
 public class FBTCalibratorFollowHead : ResoniteMod {
-	internal const string VERSION_CONSTANT = "1.0.0"; //Changing the version here updates it in all locations needed
+	internal const string VERSION_CONSTANT = "1.0.1"; //Changing the version here updates it in all locations needed
 	public override string Name => "FBTCalibratorFollowHead";
 	public override string Author => "ModernBalloonie";
 	public override string Version => VERSION_CONSTANT;
 	public override string Link => "https://github.com/ModernBalloonie/FBTCalibratorFollowHead";
 
 	public override void OnEngineInit() {
-		Harmony harmony = new("com.example.FBTCalibratorFollowHead");
+		Harmony harmony = new("ModernBalloonie.FBTCalibratorFollowHead");
 		harmony.PatchAll();
 	}
 
